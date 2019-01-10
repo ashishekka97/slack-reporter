@@ -59,7 +59,7 @@ app.post("/", function(req,res,next) {
 		}
 	  //console.log(message)
 	  sendMessageToSlackResponseURL(responseURL, message);
-	  res.send('Message sent to slack');
+	  res.send('Fetching data. This may take some time....');
 	});
 });
 
