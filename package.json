@@ -1,0 +1,28 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "A simple script to detect tables running out of auto-incremented ids from a given database.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishekka97/assignment.git"
+  },
+  "author": "Ashish Ekka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashishekka97/assignment/issues"
+  },
+  "homepage": "https://github.com/ashishekka97/assignment#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.1-alpha.1",
+    "mysql": "^2.16.0",
+    "req-flash": "0.0.3",
+    "request": "^2.88.0"
+  }
+}
