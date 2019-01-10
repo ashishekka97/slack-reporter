@@ -32,7 +32,7 @@ var entries, stats;
 
 
 //entry point to trigger the event. This can be simple GET request from any client or it may be a POST request from Slack's /command
-app.get("/", function(req,res,next) {
+app.post("/", function(req,res,next) {
 	db.query('select * from schema_auto_increment_columns where auto_increment_ratio > 0.8', function (error, results, fields) {
 	  if (error) throw error;
 	  formatData(results); //we need to format the data for use in Slack's webhooks.
