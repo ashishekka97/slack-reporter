@@ -4,16 +4,17 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const path = require('path');
 const app = express();
+const config = require('./config');
 
-const port = 5000;
+const port = config.port;
 
 // create connection to database
 // the mysql.createConnection function takes in a configuration object which contains host, user, password and the database name.
 const db = mysql.createConnection ({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'sys'
+    host: config.db.host,
+    user: config.db.user,
+    password: config.db.password,
+    database: config.db.database
 });
 
 // connect to database
@@ -36,7 +37,7 @@ app.get("/", function(req,res,next) {
 	  if (error) throw error;
 	  formatData(results); //we need to format the data for use in Slack's webhooks.
 	  //console.log(entries);
-	  var responseURL = "https://hooks.slack.com/services/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";
+	  var responseURL = config.slack.url;
 	  var message = {
 	    "text": "Database Entries running out of IDs",
 	    "attachments": [
