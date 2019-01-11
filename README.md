@@ -2,9 +2,9 @@
 
 Assignment submission for Postman Platform Engineer Intern. slack-reporter is a node script to identify all those tables in the database that may run out of auto incremented IDs. It identifies all those tables and sends a slack message for the same.
 
-  - It uses MySQL's sys database. I'm gonna add the link later for documentation.
-  - It uses Slack's webhooks to send messages to Slack.
-  - The app is going to be deployed on Heroku.
+  - It uses MySQL's [sys](https://dev.mysql.com/doc/refman/8.0/en/sys-schema.html) database.
+  - It uses Slack's [Webhooks](https://api.slack.com/incoming-webhooks) to send messages to Slack.
+  - The [app](https://slack-reporter.herokuapp.com) is going to be deployed on Heroku.
 
 
 
@@ -31,7 +31,8 @@ $ node app.js
 
 ### Todos
 
- - Add support for Slack commands.
+ - ~~Add a cloud database to run on Heroku.~~
+ - ~~Add support for Slack commands.~~
  - Optimizations
 
 License
