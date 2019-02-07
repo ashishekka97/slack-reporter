@@ -6,7 +6,7 @@ Assignment submission for Postman Platform Engineer Intern. slack-reporter is a 
   - It uses Slack's [Webhooks](https://api.slack.com/incoming-webhooks) to send messages to Slack.
   - The [app](https://slack-reporter.herokuapp.com) is going to be deployed on Heroku.
 
-
+![slack-reporter Screenshot](./Screenshot.png)
 
 ### Tech
 
