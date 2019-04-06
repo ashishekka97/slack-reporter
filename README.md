@@ -1,6 +1,6 @@
 # slack-reporter
 
-Assignment submission for Postman Platform Engineer Intern. slack-reporter is a node script to identify all those tables in the database that may run out of auto incremented IDs. It identifies all those tables and sends a slack message for the same.
+slack-reporter is a node script to identify all those tables in the database that may run out of auto incremented IDs. It identifies all those tables and sends a slack message for the same.
 
   - It uses MySQL's [sys](https://dev.mysql.com/doc/refman/8.0/en/sys-schema.html) database.
   - It uses Slack's [Webhooks](https://api.slack.com/incoming-webhooks) to send messages to Slack.
